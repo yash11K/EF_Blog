@@ -17,7 +17,7 @@ public class Post
     [ForeignKey("AuthorId")] 
     public Author Author;
 
-    public List<Tags>? Tags; 
-    
-    
+    public List<Tags>? Tags;
+
+    public List<Comments>? Comments; 
 }
