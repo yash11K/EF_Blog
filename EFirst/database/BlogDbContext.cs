@@ -7,7 +7,7 @@ namespace EFirst.database;
 public class BlogDbContext : DbContext {
     public DbSet<Post>? Posts { get; set; }
     public DbSet<Author>? Authors { get; set; }
-    public DbSet<Tags>? Tags { get; set; }
+    public DbSet<Tag>? Tags { get; set; }
     public DbSet<Comments>? Comments { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

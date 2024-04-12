@@ -10,14 +10,14 @@ public class Post
     [MaxLength(255)]
     public string Title { get; set; } = "";
     public string Body { get; set; } = "";
-    public DateTime CreatedAt { get; } = DateTime.Now;
+    public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }
     public int AuthorId { get; set; }
     
     [ForeignKey("AuthorId")] 
     public Author Author;
 
-    public List<Tags>? Tags;
+    public List<Tag>? Tags;
 
     public List<Comments>? Comments; 
 }
